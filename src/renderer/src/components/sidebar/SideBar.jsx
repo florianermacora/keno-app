@@ -18,7 +18,7 @@ export default function SideBar({ children }) {
           />
 
           <button
-             onClick={() => setExpanded((curr) => !curr)}
+            onClick={() => setExpanded((curr) => !curr)}
             className="p-2 rouded-lg bg-gray-50 hover:bg-gray-100"
           >
             {expanded ? <ChevronFirst /> : <ChevronLast />}
@@ -32,7 +32,7 @@ export default function SideBar({ children }) {
   )
 }
 
-export function SideBarItem({ icon, text, active}) {
+export function SideBarItem({ icon, text, active }) {
   const { expanded } = useContext(SideBarContext)
   console.log(expanded)
   return (
@@ -49,22 +49,22 @@ export function SideBarItem({ icon, text, active}) {
     `}
     >
       {icon}
-      <span className={`overflow-hidden transition-all ${expanded ? 'w-52 ml-3'  : 'w-0 h-0'}`}>
+      <span className={`overflow-hidden transition-all ${expanded ? 'w-52 ml-3' : 'w-0 h-0'}`}>
         {text}
       </span>
-      
+
       {!expanded && (
-        <div 
-            className={`
+        <div
+          className={`
             absolute left-full rounded-md px-2 py-1 ml-6
             bg-indigo-100 text-indigo-800 text-sm
             invisible opacity-20 -translate-x-3 transition-all
             group-hover:visible group-hover:opacity-100 group-hover:translation-x-0
             `}
-                >
-                    {text}
-                </div>
-        )}
+        >
+          {text}
+        </div>
+      )}
     </li>
   )
 }

@@ -3,17 +3,16 @@
 }
 
 .app {
-  display:flex;
-  height:100vh;
+  display: flex;
+  height: 100vh;
 }
 
-.topbar-container{
+.topbar-container {
   height: 50px;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-
 }
 
 .sidebar-container {
