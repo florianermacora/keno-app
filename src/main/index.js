@@ -9,8 +9,8 @@ function createWindow() {
     width: 900,
     height: 670,
     show: false,
-    frame:false,
-    transparent:true,
+    frame: false,
+    transparent: true,
     autoHideMenuBar: true,
     ...(process.platform === 'linux' ? { icon } : {}),
     webPreferences: {
@@ -65,7 +65,7 @@ app.whenReady().then(() => {
       if (!currentWindow.isMaximized()) {
         currentWindow.maximize()
       } else {
-        currentWindow.unmaximize();
+        currentWindow.unmaximize()
         currentWindow.setSize(900, 670)
         currentWindow.center()
       }

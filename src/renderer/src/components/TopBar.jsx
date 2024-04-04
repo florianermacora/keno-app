@@ -2,15 +2,15 @@ import React from 'react'
 
 export default function TopBar() {
   const handleMinimize = () => {
-    window.electron.ipcRenderer.send('minimize-window');
+    window.electron.ipcRenderer.send('minimize-window')
   }
 
   const handleMaximize = () => {
-    window.electron.ipcRenderer.send('maximize-window');
+    window.electron.ipcRenderer.send('maximize-window')
   }
 
   const handleClose = () => {
-    window.electron.ipcRenderer.send('close-window');
+    window.electron.ipcRenderer.send('close-window')
   }
 
   return (
