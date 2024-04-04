@@ -1,5 +1,6 @@
 import React from 'react'
 
+
 export default function TopBar() {
   const handleMinimize = () => {
     window.electron.ipcRenderer.send('minimize-window')
@@ -14,8 +15,8 @@ export default function TopBar() {
   }
 
   return (
-    <div>
-      <div id="control-buttons" className="text-stone-200 absolute top-1 right-0 pe-2">
+    <div className='object-top'>
+      <div id="control-buttons" className="top-bar text-stone-200 absolute top-1 right-0 pe-2">
         <button id="minimize" className="p-1" onClick={handleMinimize}>
           &#128469;
         </button>

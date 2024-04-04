@@ -1,0 +1,24 @@
+::-webkit-scrollbar {
+  display: none;
+}
+
+.app {
+  display:flex;
+  height:100vh;
+}
+
+.topbar-container{
+  height: 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+
+}
+
+.sidebar-container {
+  position: fixed; /* Fixer la SidebarMenu à gauche de la fenêtre */
+  top: 32px; /* Laisser un espace pour la TopBar */
+  bottom: 0; /* Remplir la hauteur restante */
+  width: 200px; /* Largeur de la SidebarMenu */
+}
